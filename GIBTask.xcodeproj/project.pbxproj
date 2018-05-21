@@ -13,6 +13,7 @@
 		CEC34E7B20B336870080A49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC34E7A20B336870080A49B /* Assets.xcassets */; };
 		CEC34E7E20B336870080A49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC34E7C20B336870080A49B /* LaunchScreen.storyboard */; };
 		CEC34E8120B336870080A49B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC34E8020B336870080A49B /* main.m */; };
+		CEC34E8920B345300080A49B /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEC34E8720B345300080A49B /* Xtrace.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CEC34E7D20B336870080A49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC34E7F20B336870080A49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC34E8020B336870080A49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEC34E8720B345300080A49B /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Xtrace.mm; path = "../../../../Downloads/Xtrace-master/Xtrace.mm"; sourceTree = "<group>"; };
+		CEC34E8820B345300080A49B /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xtrace.h; path = "../../../../Downloads/Xtrace-master/Xtrace.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		CEC34E7020B336850080A49B /* GIBTask */ = {
 			isa = PBXGroup;
 			children = (
+				CEC34E8820B345300080A49B /* Xtrace.h */,
+				CEC34E8720B345300080A49B /* Xtrace.mm */,
 				CEC34E7120B336850080A49B /* AppDelegate.h */,
 				CEC34E7220B336850080A49B /* AppDelegate.m */,
 				CEC34E7420B336850080A49B /* ViewController.h */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC34E8920B345300080A49B /* Xtrace.mm in Sources */,
 				CEC34E7620B336850080A49B /* ViewController.m in Sources */,
 				CEC34E8120B336870080A49B /* main.m in Sources */,
 				CEC34E7320B336850080A49B /* AppDelegate.m in Sources */,

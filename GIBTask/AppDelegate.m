@@ -16,36 +16,100 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //[UIView xtrace];
+    
     // Override point for customization after application launch.
     return YES;
 }
 
+@end
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+@implementation UIView (Tracking)
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(didMoveToSuperview);
+        SEL swizzledSelector = @selector(x_didMoveToSuperview);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        method_exchangeImplementations(swizzledMethod, originalMethod);
+    });
 }
 
+-(void)x_didMoveToSuperview {
+    NSLog(@"%@ is on %@ now", [self class], [self.superview class]);
+}
+@end
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+@implementation UISwitch (Tracking)
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(setOn:animated:notifyingVisualElement:);
+        SEL swizzledSelector = @selector(x_setOn:animated:notifyingVisualElement:);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        method_exchangeImplementations(swizzledMethod, originalMethod);
+    });
 }
 
+-(void)x_setOn:(BOOL)on animated:(BOOL)animated notifyingVisualElement:(BOOL)notifying {
+    NSLog(@"Set on: %d", on);
+    [self x_setOn:on animated:animated notifyingVisualElement:notifying];
+}
+@end
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+@implementation UITextField (Tracking)
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(insertFilteredText:);
+        SEL swizzledSelector = @selector(x_insertFilteredText:);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        method_exchangeImplementations(swizzledMethod, originalMethod);
+    });
 }
 
+-(NSRange)x_insertFilteredText:(NSString *)text {
+    NSLog(@"Text: %@", self.text);
+    return [self x_insertFilteredText:text];
+}
+@end
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+@implementation UIControl (Tracking)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(endTrackingWithTouch:withEvent:);
+        SEL swizzledSelector = @selector(x_endTrackingWithTouch:withEvent:);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        method_exchangeImplementations(swizzledMethod, originalMethod);
+    });
 }
 
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+-(void)x_endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+    NSLog(@"Action for %@", NSStringFromClass([self class]));
+    [self x_endTrackingWithTouch:touch withEvent:event];
 }
-
 
 @end
