@@ -32,7 +32,7 @@
         superElementDescription = NSStringFromClass([self.superview class]);
     }
     
-    //NSLog(@"%@ with origin in %@ is on %@", elementDescription, NSStringFromCGPoint(self.frame.origin), superElementDescription);
+    NSLog(@"%@ with origin in %@ is on %@", elementDescription, NSStringFromCGPoint(self.frame.origin), superElementDescription);
 }
 
 - (NSString *)trackingDescription {
