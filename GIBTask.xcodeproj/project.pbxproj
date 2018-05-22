@@ -15,6 +15,7 @@
 		43C7A9BA20B40E2F00CF139D /* UISlider+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9B920B40E2F00CF139D /* UISlider+Tracking.m */; };
 		43C7A9BD20B40EB100CF139D /* UIButton+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9BC20B40EB100CF139D /* UIButton+Tracking.m */; };
 		43C7A9C120B414E200CF139D /* UILabel+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9C020B414E200CF139D /* UILabel+Tracking.m */; };
+		43DFE4D120B455E0001B2D92 /* UITextView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DFE4D020B455E0001B2D92 /* UITextView+Tracking.m */; };
 		CEC34E7320B336850080A49B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC34E7220B336850080A49B /* AppDelegate.m */; };
 		CEC34E7620B336850080A49B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC34E7520B336850080A49B /* ViewController.m */; };
 		CEC34E7920B336850080A49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC34E7720B336850080A49B /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		43C7A9BE20B4123C00CF139D /* SelfDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfDescriptor.h; sourceTree = "<group>"; };
 		43C7A9BF20B414E200CF139D /* UILabel+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Tracking.h"; sourceTree = "<group>"; };
 		43C7A9C020B414E200CF139D /* UILabel+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Tracking.m"; sourceTree = "<group>"; };
+		43DFE4CF20B455E0001B2D92 /* UITextView+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+Tracking.h"; sourceTree = "<group>"; };
+		43DFE4D020B455E0001B2D92 /* UITextView+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Tracking.m"; sourceTree = "<group>"; };
 		CEC34E6E20B336850080A49B /* GIBTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIBTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC34E7120B336850080A49B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEC34E7220B336850080A49B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				43C7A9BC20B40EB100CF139D /* UIButton+Tracking.m */,
 				43C7A9BF20B414E200CF139D /* UILabel+Tracking.h */,
 				43C7A9C020B414E200CF139D /* UILabel+Tracking.m */,
+				43DFE4CF20B455E0001B2D92 /* UITextView+Tracking.h */,
+				43DFE4D020B455E0001B2D92 /* UITextView+Tracking.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				CEC34E8920B345300080A49B /* Xtrace.mm in Sources */,
 				43C7A9AE20B3F53C00CF139D /* UISwitch+Tracking.m in Sources */,
 				CEC34E7620B336850080A49B /* ViewController.m in Sources */,
+				43DFE4D120B455E0001B2D92 /* UITextView+Tracking.m in Sources */,
 				CEC34E8120B336870080A49B /* main.m in Sources */,
 				43C7A9B220B3F59C00CF139D /* UITextField+Tracking.m in Sources */,
 				43C7A9C120B414E200CF139D /* UILabel+Tracking.m in Sources */,

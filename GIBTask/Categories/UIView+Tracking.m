@@ -18,6 +18,7 @@
 
 -(void)x_didMoveToSuperview {
     NSString *elementDescription = nil;
+    NSString *superElementDescription = nil;
     
     if ([[self class] conformsToProtocol:@protocol(SelfDescriptor)]) {
         elementDescription = [(id<SelfDescriptor>)self trackingDescription];
@@ -25,6 +26,16 @@
         elementDescription = NSStringFromClass([self class]);
     }
     
-    NSLog(@"%@ with origin in %@ is on %@", elementDescription, NSStringFromCGPoint(self.frame.origin), [self.superview class]);
+    if ([[self.superview class] conformsToProtocol:@protocol(SelfDescriptor)]) {
+        superElementDescription = [(id<SelfDescriptor>)self.superview trackingDescription];
+    } else {
+        superElementDescription = NSStringFromClass([self.superview class]);
+    }
+    
+    //NSLog(@"%@ with origin in %@ is on %@", elementDescription, NSStringFromCGPoint(self.frame.origin), superElementDescription);
+}
+
+- (NSString *)trackingDescription {
+    return [NSString stringWithFormat:@"View colored with {%@}", self.backgroundColor];
 }
 @end
