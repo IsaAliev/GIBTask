@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C7A9A820B3F30600CF139D /* UIView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9A720B3F30600CF139D /* UIView+Tracking.m */; };
+		43C7A9AB20B3F32800CF139D /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9AA20B3F32800CF139D /* NSObject+Swizzling.m */; };
+		43C7A9AE20B3F53C00CF139D /* UISwitch+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9AD20B3F53C00CF139D /* UISwitch+Tracking.m */; };
+		43C7A9B220B3F59C00CF139D /* UITextField+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9B120B3F59C00CF139D /* UITextField+Tracking.m */; };
+		43C7A9B520B3F5D300CF139D /* UIControl+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9B420B3F5D300CF139D /* UIControl+Tracking.m */; };
+		43C7A9BA20B40E2F00CF139D /* UISlider+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9B920B40E2F00CF139D /* UISlider+Tracking.m */; };
+		43C7A9BD20B40EB100CF139D /* UIButton+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9BC20B40EB100CF139D /* UIButton+Tracking.m */; };
+		43C7A9C120B414E200CF139D /* UILabel+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A9C020B414E200CF139D /* UILabel+Tracking.m */; };
 		CEC34E7320B336850080A49B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC34E7220B336850080A49B /* AppDelegate.m */; };
 		CEC34E7620B336850080A49B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC34E7520B336850080A49B /* ViewController.m */; };
 		CEC34E7920B336850080A49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC34E7720B336850080A49B /* Main.storyboard */; };
@@ -17,6 +25,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43C7A9A620B3F30600CF139D /* UIView+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9A720B3F30600CF139D /* UIView+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tracking.m"; sourceTree = "<group>"; };
+		43C7A9A920B3F32800CF139D /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		43C7A9AA20B3F32800CF139D /* NSObject+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		43C7A9AC20B3F53C00CF139D /* UISwitch+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9AD20B3F53C00CF139D /* UISwitch+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Tracking.m"; sourceTree = "<group>"; };
+		43C7A9B020B3F59C00CF139D /* UITextField+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9B120B3F59C00CF139D /* UITextField+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Tracking.m"; sourceTree = "<group>"; };
+		43C7A9B320B3F5D300CF139D /* UIControl+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9B420B3F5D300CF139D /* UIControl+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Tracking.m"; sourceTree = "<group>"; };
+		43C7A9B720B40BD800CF139D /* TrackingProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackingProcessor.h; sourceTree = "<group>"; };
+		43C7A9B820B40E2F00CF139D /* UISlider+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISlider+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9B920B40E2F00CF139D /* UISlider+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Tracking.m"; sourceTree = "<group>"; };
+		43C7A9BB20B40EB100CF139D /* UIButton+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9BC20B40EB100CF139D /* UIButton+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Tracking.m"; sourceTree = "<group>"; };
+		43C7A9BE20B4123C00CF139D /* SelfDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfDescriptor.h; sourceTree = "<group>"; };
+		43C7A9BF20B414E200CF139D /* UILabel+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Tracking.h"; sourceTree = "<group>"; };
+		43C7A9C020B414E200CF139D /* UILabel+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Tracking.m"; sourceTree = "<group>"; };
 		CEC34E6E20B336850080A49B /* GIBTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIBTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC34E7120B336850080A49B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEC34E7220B336850080A49B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +53,8 @@
 		CEC34E7D20B336870080A49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC34E7F20B336870080A49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC34E8020B336870080A49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEC34E8720B345300080A49B /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Xtrace.mm; path = "../../../../Downloads/Xtrace-master/Xtrace.mm"; sourceTree = "<group>"; };
-		CEC34E8820B345300080A49B /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xtrace.h; path = "../../../../Downloads/Xtrace-master/Xtrace.h"; sourceTree = "<group>"; };
+		CEC34E8720B345300080A49B /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
+		CEC34E8820B345300080A49B /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +68,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43C7A9A520B3F2E200CF139D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				43C7A9A620B3F30600CF139D /* UIView+Tracking.h */,
+				43C7A9A720B3F30600CF139D /* UIView+Tracking.m */,
+				43C7A9A920B3F32800CF139D /* NSObject+Swizzling.h */,
+				43C7A9AA20B3F32800CF139D /* NSObject+Swizzling.m */,
+				43C7A9AC20B3F53C00CF139D /* UISwitch+Tracking.h */,
+				43C7A9AD20B3F53C00CF139D /* UISwitch+Tracking.m */,
+				43C7A9B020B3F59C00CF139D /* UITextField+Tracking.h */,
+				43C7A9B120B3F59C00CF139D /* UITextField+Tracking.m */,
+				43C7A9B320B3F5D300CF139D /* UIControl+Tracking.h */,
+				43C7A9B420B3F5D300CF139D /* UIControl+Tracking.m */,
+				43C7A9B820B40E2F00CF139D /* UISlider+Tracking.h */,
+				43C7A9B920B40E2F00CF139D /* UISlider+Tracking.m */,
+				43C7A9BB20B40EB100CF139D /* UIButton+Tracking.h */,
+				43C7A9BC20B40EB100CF139D /* UIButton+Tracking.m */,
+				43C7A9BF20B414E200CF139D /* UILabel+Tracking.h */,
+				43C7A9C020B414E200CF139D /* UILabel+Tracking.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		43C7A9B620B40BC700CF139D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				43C7A9B720B40BD800CF139D /* TrackingProcessor.h */,
+				43C7A9BE20B4123C00CF139D /* SelfDescriptor.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		CEC34E6520B336850080A49B = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +119,8 @@
 		CEC34E7020B336850080A49B /* GIBTask */ = {
 			isa = PBXGroup;
 			children = (
+				43C7A9B620B40BC700CF139D /* Protocols */,
+				43C7A9A520B3F2E200CF139D /* Categories */,
 				CEC34E8820B345300080A49B /* Xtrace.h */,
 				CEC34E8720B345300080A49B /* Xtrace.mm */,
 				CEC34E7120B336850080A49B /* AppDelegate.h */,
@@ -146,10 +206,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C7A9A820B3F30600CF139D /* UIView+Tracking.m in Sources */,
+				43C7A9BD20B40EB100CF139D /* UIButton+Tracking.m in Sources */,
+				43C7A9AB20B3F32800CF139D /* NSObject+Swizzling.m in Sources */,
+				43C7A9B520B3F5D300CF139D /* UIControl+Tracking.m in Sources */,
 				CEC34E8920B345300080A49B /* Xtrace.mm in Sources */,
+				43C7A9AE20B3F53C00CF139D /* UISwitch+Tracking.m in Sources */,
 				CEC34E7620B336850080A49B /* ViewController.m in Sources */,
 				CEC34E8120B336870080A49B /* main.m in Sources */,
+				43C7A9B220B3F59C00CF139D /* UITextField+Tracking.m in Sources */,
+				43C7A9C120B414E200CF139D /* UILabel+Tracking.m in Sources */,
 				CEC34E7320B336850080A49B /* AppDelegate.m in Sources */,
+				43C7A9BA20B40E2F00CF139D /* UISlider+Tracking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
